@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Fusion</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <script src="sliderengine/jquery.js"></script>
+    <script src="sliderengine/amazingslider.js"></script>
+    <link rel="stylesheet" type="text/css" href="sliderengine/amazingslider-1.css">
+    <script src="sliderengine/initslider-1.js"></script>
+    <style>
+        #top{
+            width: 100%;
+            height: 80px;
+            background-color: #212121;
+            padding-left: 16px;
+            margin-left: -8px;          
+        }
+        #foodfusion{
+            width: 500px;
+            margin-left: 68px;
+            margin-top: 18px;
+        }
+        #img_top1{
+            margin-left: 245px;
+        }
+        .img_top{
+            opacity: 60%;
+            width: 28px;
+            height: 28px;
+            margin-top: 23px;
+            margin-right: 10px;
+            display: inline-block;
+        }
+        .img_top:hover{
+            opacity: 100%;;
+        }
+        #login_top{
+            margin-left: 50px;
+            color: #c5c1c1;
+            font-size: 18px;
+            opacity: 70%;
+            display: inline-block;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        #login_top:hover{
+            opacity: 100%;
+        }
+        #nav{
+            width: 100%;
+            height: 140px; 
+            background-image: url(images/logo.png);
+            background-repeat: no-repeat;
+            background-size: 134px; 
+            background-position: 75px 10px;
+        }
+        #a{
+            color: black;
+            text-decoration: none;
+            font-size: 15px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        #a:hover{
+            color: #F7B030;
+            opacity: 80%;
+        }
+        #anchor{
+            margin-left: 590px;
+        }
+        .anchor{
+            margin-right: 30px;
+            float: left;
+            list-style: none;
+            margin-top: 76px;
+        }
+        #bg{
+            width: 100%;
+            height: 400px;
+            background-image: url(images/bg.jpg);
+            background-repeat: no-repeat;
+            background-size: 1370px;
+        }
+        h2{
+            text-align: center;
+            color: white;
+            padding-top: 55px;
+            font-size: 30px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            -webkit-text-stroke: 0.4px black;
+        }
+        h1{
+            text-align: center;
+            color: white; 
+            margin-top: -25px;
+            font-size: 45px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            -webkit-text-stroke: 0.4px black;
+        }
+        #search{
+            width: 500px;
+            height: 62px;
+            background-color: white;
+            margin-left: 400.5px;
+            margin-top: -12px;
+            border-radius: 35px;
+            border: 1px solid #F7B030;
+        }
+        ::placeholder{
+            font-size: 18px;
+            opacity: 80%;
+        }
+        #btn{
+            padding: 17px;
+            border-radius: 20px; 
+            color: white;
+            background-color: #F7B030;
+            font-size: 18px;
+        }
+        #playstore{
+            width: 240px;
+            height: 100px;
+            background-color: rgb(0, 0, 0,.8);
+            border-radius: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 35px;
+        }
+        #link{
+            text-decoration: none;
+        }
+        #playstore:hover{
+            transform: scale(1.05);
+        }
+        #android{
+            margin-left: 40px;
+            margin-right: 2px;
+            font-size: 14px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+        #ios{
+            margin-left: 15px;
+            margin-right: 2px;
+            font-size: 14px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+        h3{
+            text-align: center;
+            color: white; 
+            padding-top: 10px;
+            font-size: 18px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+        }
+        .playstore{
+            width: 25px;
+            height: 25px; 
+        }
+        #our{
+            font-size: 40px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 55px;
+        }
+        #recipes{
+            color:  #F7B030;
+        }
+        #recipe_box{
+            width: 260px;
+            height: 240px;
+            border: 1px solid rgb(201, 199, 199);
+            display: inline-block;
+            margin-right: 25px;
+            margin-top: -40px;
+            margin-bottom: 58px;
+        }
+        #recipe_box:hover{
+            box-shadow: 0px 0px 10px rgb(171, 170, 170);
+            
+        }
+        #recipe_box_anchor{
+            text-decoration: none;
+        }
+        .box1{
+            margin-left: 89px;
+        }
+        #img{
+            width: 243px;
+            height: 170px;
+            margin-left: 8px;
+            margin-top: 6px;
+        }
+        #recipe_name{
+            color: black;
+            font-size: 22px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin-top: -50px;
+            margin-left: -35px;
+        }
+        #end_part{
+            width: 100%;
+            height: 398px;
+            padding-left: 16px;
+            margin-left: -8px;
+            background-color: #363636;
+            margin-top: 150px;
+        }
+        #end_part1{
+            margin-left: 50px;
+        }
+        .logo_img{
+            width: 110px;
+            height: 110px;
+            margin-right: 10px;
+            margin-top: 30px;
+        }
+        .end_anchor{
+            color: #e5e4e4;
+            text-decoration: none;
+            margin-right: 12px;
+            font-weight: bold;
+            font-size: 17px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .end_anchor:hover{
+            color: #F7B030;
+            opacity: 80%;
+        }
+        #end_anchor1{
+            margin-left: 48px;
+        }
+        p{
+            color: #d7d7d7;
+            font-size: 16px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin-left: 48px;
+            text-align: justify;
+        }
+        #end{
+            width: 100%;
+            height: 105px;
+        }
+        h6{
+            color: #8F8F8F;
+            margin-top: 50px;
+            text-align: center;
+            font-size: 18px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        #color{
+            color: #F7B030;
+            font-size: 18px;
+        }
+        #privacy{
+            color: black;
+            margin-top: -15px;
+            text-align: center;
+            font-size: 20px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        #privacy:hover{
+            color: #F7B030;
+            opacity: 90%;
+        }
+    </style>
+</head>
+<body>
+    <div id="top">
+        <img id="foodfusion" src="images/jugaad.png" alt="">
+        <a href="https://www.facebook.com" target="_blank"><img id="img_top1" class="img_top" src="images/fb1.png" alt=""></a>
+        <a href="https://www.youtube.com" target="_blank"><img class="img_top" src="images/youtube1.png" alt=""></a>
+        <a href="https://www.instagram.com" target="_blank"><img class="img_top" src="images/insta1.png" alt=""></a>
+        <a href="https://www.twitter.com" target="_blank"><img class="img_top" src="images/twitter1.png" alt=""></a>
+        <a href="https://www.whatsapp.com" target="_blank"><img class="img_top" src="images/whatsapp1.jpg" alt=""></a>
+        <h5 id="login_top">LOGIN | REGISTER</h5>
+    </div>
+    <div id="nav">
+        <li id="anchor" class="anchor"><a id="a" href="ramzan.html">RAMZAN</a></li>
+        <li class="anchor"><a id="a" href="drinks.html">DRINKS</a></li>
+        <li class="anchor"><a id="a" href="dishtype.html">DISH TYPE</a></li>
+        <li class="anchor"><a id="a" href="breakfast.html">BREAKFAST</a></li>
+        <li class="anchor"><a id="a" href="deserts.html">DESSERTS</a></li>
+        <li class="anchor"><a id="a" href="lunchdinner.html">LUNCH/DINNER</a></li>
+    </div>
+    <div id="bg">
+        <h2>WE ARE HERE TO MAKE</h2>
+        <h1>COOKING FUN AGAIN</h1>
+        <input id="search" type="text" placeholder="Aaj kya pakana hai?">
+        <button id="btn">Search</button>
+        <a id="link" href="https://play.google.com/store/search?q=food%20fusion&c=apps" target="_blank"><div id="playstore">
+            <h3>DOWNLOAD OUR APPS</h3>
+            <span id="android">Android</span>
+            <img class="playstore" src="images/playstore.png" alt="">
+            <span id="ios">ios</span>
+            <img class="playstore" src="images/ios.png" alt="">
+        </div></a>
+    </div>
+    <h6 id="our">Our <span id="recipes">Recipes</span></h6><br>
+    <div id="recipe_box" class="box1">
+        <a id="recipe_box_anchor" href="https://youtu.be/EpfvTmgIYDE?si=BVMIbMeYGpH9hUwF" target="_blank"><img id="img" src="images/0.jpg" alt="">
+        <h2 id="recipe_name">Butter Chicken Bowl</h2></a>
+    </div>
+    <div id="recipe_box">
+        <a id="recipe_box_anchor" href="https://youtu.be/G6cOPZ8yxwI?si=ikjLvn58-ugwnKEE" target="_blank"><img id="img" src="images/1.jpg" alt="">
+        <h2 id="recipe_name">Creamy Daal Makhni</h2></a>
+    </div>
+    <div id="recipe_box">
+        <a id="recipe_box_anchor" href="https://youtu.be/uaT9WDvLZVU?si=pF4_7sXTKcc2grly" target="_blank"><img id="img" src="images/3.jpg" alt="">
+        <h2 id="recipe_name">Palak Cheese Kabab</h2></a>
+    </div>
+    <div id="recipe_box">
+        <a id="recipe_box_anchor" href="https://youtu.be/2qF9rXQtjBs?si=UxvYpBJf2QMKuaQ8" target="_blank"><img id="img" src="images/4.jpg" alt="">
+        <h2 id="recipe_name">Aka Castella Cake</h2></a>
+    </div>
+   <div id="recipe_box" class="box1">
+        <a id="recipe_box_anchor" href="https://youtu.be/y_9cnKDg7N4?si=AirkwFgGKnVnszu0" target="_blank"><img id="img" src="images/5.jpg" alt="">
+        <h2 id="recipe_name">Mac & Cheese</h2></a>
+    </div>
+    <div id="recipe_box">
+        <a id="recipe_box_anchor" href="https://youtu.be/gtDJ-mxVIkg?si=BS-cuyZfAVzkP43i" target="_blank"><img id="img" src="images/6.jpg" alt="">
+        <h2 id="recipe_name">Chocalate Souffle</h2></a>
+    </div>
+    <div id="recipe_box">
+        <a id="recipe_box_anchor" href="https://youtu.be/GwB99ceWHYQ?si=lGt0pegI_tZ2Ug07" target="_blank"><img id="img" src="images/2.jpg" alt="">
+        <h2 id="recipe_name">Palak Lachaa Paratha</h2></a>
+    </div>
+    <div id="recipe_box">
+        <a id="recipe_box_anchor" href="https://youtu.be/QKdJyaecCBo?si=SEBLicm6xg9aJHLz" target="_blank"><img id="img" src="images/7.jpg" alt="">
+        <h2 id="recipe_name">Chocalate Cake</h2></a>
+    </div>
+    <h6 id="our">Our Happy<span id="recipes">Cooking Partners</span></h6>
+    <div class="amazingslider-wrapper" id="amazingslider-wrapper-1" style="display:block;position:relative;max-width:1000px;margin:0px auto 48px;">
+        <div class="amazingslider" id="amazingslider-1" style="display:block;position:relative;margin:0 auto;">
+            <ul class="amazingslider-slides" style="display:none;">
+                <li><img src="images/dawn.png" alt="dawn"  title="dawn" />
+                </li>
+                <li><img src="images/gaviscon.png" alt="gaviscon"  title="gaviscon" />
+                </li>
+                <li><img src="images/knorr.png" alt="knorr"  title="knorr" />
+                </li>
+                <li><img src="images/lipton.jpg" alt="lipton"  title="lipton" />
+                </li>
+                <li><img src="images/meatone.png" alt="meatone"  title="meatone" />
+                </li>
+                <li><img src="images/roohafza.png" alt="roohafza"  title="roohafza" />
+                </li>
+                <li><img src="images/shaan.png" alt="shaan"  title="shaan" />
+                </li>
+                <li><img src="images/sufi.png" alt="sufi"  title="sufi" />
+                </li>
+                <li><img src="images/surf.jpg" alt="surf"  title="surf" />
+                </li>
+                <li><img src="images/tux.png" alt="tux"  title="tux" />
+                </li>
+                <li><img src="images/vim.png" alt="vim"  title="vim" />
+                </li>
+                <li><img src="images/walls.png" alt="walls"  title="walls" />
+                </li>
+                <li><img src="images/youngs.png" alt="youngs"  title="youngs" />
+                </li>
+            </ul>
+            <ul class="amazingslider-thumbnails" style="display:none;">
+                <li><img src="images/dawn-tn.png" alt="dawn" title="dawn" /></li>
+                <li><img src="images/gaviscon-tn.png" alt="gaviscon" title="gaviscon" /></li>
+                <li><img src="images/knorr-tn.png" alt="knorr" title="knorr" /></li>
+                <li><img src="images/lipton-tn.jpg" alt="lipton" title="lipton" /></li>
+                <li><img src="images/meatone-tn.png" alt="meatone" title="meatone" /></li>
+                <li><img src="images/roohafza-tn.png" alt="roohafza" title="roohafza" /></li>
+                <li><img src="images/shaan-tn.png" alt="shaan" title="shaan" /></li>
+                <li><img src="images/sufi-tn.png" alt="sufi" title="sufi" /></li>
+                <li><img src="images/surf-tn.jpg" alt="surf" title="surf" /></li>
+                <li><img src="images/tux-tn.png" alt="tux" title="tux" /></li>
+                <li><img src="images/vim-tn.png" alt="vim" title="vim" /></li>
+                <li><img src="images/walls-tn.png" alt="walls" title="walls" /></li>
+                <li><img src="images/youngs-tn.png" alt="youngs" title="youngs" /></li>
+            </ul>
+        <div class="amazingslider-engine"><a href="http://amazingslider.com" title="Responsive jQuery Image Slideshow">Responsive jQuery Image Slideshow</a></div>
+        </div>
+    </div>
+    <div id="end_part">
+        <img id="end_part1" class="logo_img" src="images/logo.png" alt="">
+        <img class="logo_img" src="images/logo3.png" alt="">
+        <img class="logo_img" src="images/logo2.png" alt=""><br><br>
+        <a id="end_anchor1" class="end_anchor" href="index.html">HOME</a>
+        <a class="end_anchor" href="">RECIPES</a>
+        <a class="end_anchor" href="">CONTACT US</a>
+        <a class="end_anchor" href="">ABOUT US</a>
+        <a class="end_anchor" href="">PRIVACY POLICY</a>
+        <p>Food Fusion is all about redefining ‘Cooking’ for you! It’s the solution to that never ending problem of<br> preparing high quality delicious food and curtailing the eating out habits of your loved ones! With modernized<br> and yet simple cooking methods, you are surely in for a flavorsome treat with our recipes that will<br> surely make you the next talk of the town!<br><br> Pakistan’s first digital food video portal, we understand your difficulty of being unable to execute that perfect<br> dish just by going through those long recipes & ending up with something not as good as the one you see on paper.<br> Hence, we make sure to get this covered by bringing in videos that will help you prepare the same delicious<br> food as you see in our videos.</p>
+    </div>
+    <div id="end">
+        <h6>&copy Copyright 2023 All rights of publications are reserved by<span id="color">Food Fusion</span>. Reproduction without consent is not allowed.</h6>
+        <h4 id="privacy">PRIVACY POLICY</h4>
+    </div>
+</body>
+</html>
